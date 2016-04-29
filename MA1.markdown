@@ -1,5 +1,5 @@
 
-An MA(1) process in C++11 & Rcpp.  
+An MA(1) (Moving Average) process in C++11 & Rcpp.  
 For instance: xt = 10 + wt + .7wt-1
 
 Invoke using: 
