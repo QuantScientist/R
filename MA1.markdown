@@ -1,3 +1,4 @@
+```cpp
 //An MA(1) process in C++ & Rcpp. 
 //xt = 10 + wt + .7wt-1
 //
@@ -27,3 +28,5 @@ NumericVector ma2(double u, int n, double phi, double sigma){
   }
   return out;
 }
+```
+
