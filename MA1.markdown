@@ -1,13 +1,18 @@
-```cpp
-//An MA(1) process in C++ & Rcpp. 
-//xt = 10 + wt + .7wt-1
-//
-//Invoke using: 
-//  y =(ma2(10,1500, 0.7, 1))
-//  mean(y)
-//  sd(y)
-//  acf(y,xlim=c(1,10))
 
+An MA(1) process in C++ & Rcpp.  
+For instance: xt = 10 + wt + .7wt-1
+
+Invoke using: 
+```R
+y =(ma2(10,1500, 0.7, 1))
+mean(y)
+sd(y)
+acf(y,xlim=c(1,10))
+```
+
+C++ code: 
+
+```cpp
 // [[Rcpp::export]]
 NumericVector ma2(double u, int n, double phi, double sigma){
   std::random_device rd;
